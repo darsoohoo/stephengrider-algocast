@@ -9,33 +9,19 @@
 const string = "apple"
 
 function reverse(str) {
-  let reversed = str.split('').reverse().join('')
-  return reversed;
 
+    // let string =  str.split('').reverse().join('');
+    // return string;
+    debugger;
+    let reversed = '';
+    for(let s of str){
+        reversed = s + reversed;
+    }
+    return reversed;
 }
 
 reverse(string)
 
 module.exports = reverse;
 
-/*
 
-function reverse(str) {
-    let reversed = "";
-    for(let i = 0; i < str.length; i++){
-        reversed = str[i] + reversed;
-    }
-    return reversed;
-
-}
-
-*/
-
-
-/*
-    let reversed = "";
-    for(let char of str) {
-        reversed = char + reversed
-    }
-    return reversed
-    */
